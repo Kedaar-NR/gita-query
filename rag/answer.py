@@ -57,11 +57,14 @@ Instructions:
             # Generate response
             response = model.generate_content(prompt)
             
-            if response and response.text:
+            if response and hasattr(response, 'text') and response.text:
                 return response.text.strip()
             
         except Exception as e:
             print(f"Gemini API error: {e}")
+            print(f"Error type: {type(e).__name__}")
+            import traceback
+            traceback.print_exc()
         
         return None
     
