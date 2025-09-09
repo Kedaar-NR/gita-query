@@ -29,8 +29,6 @@ A fully working chatbot that answers life skills questions using the wisdom of t
 
 **That's it!** The chatbot will search through all 700 verses of the Bhagavad Gita and give you the best answer with proper citations.
 
-## Deploy on Streamlit Cloud
-
 ## Features
 
 - **Semantic Search**: Uses sentence transformers and FAISS for fast, accurate verse retrieval
