@@ -164,6 +164,31 @@ Instructions:
         
         return answer
     
+    def generate_answer_ollama(self, query: str, context: str) -> Optional[str]:
+        """
+        Generate answer using Ollama API.
+        
+        Args:
+            query: User's question
+            context: Retrieved verses as context
+            
+        Returns:
+            Generated answer or None if API call fails
+        """
+        try:
+            from .ollama_client import OllamaClient
+            
+            # Create Ollama client
+            client = OllamaClient()
+            if not client.test_connection():
+                return None
+            
+            return client.generate_answer(query, context)
+            
+        except Exception as e:
+            print(f"Ollama integration error: {e}")
+            return None
+
     def generate_answer(self, query: str, passages: List[Dict[str, Any]], model_type: str = "extractive") -> str:
         """
         Generate an answer using the specified method.
@@ -171,7 +196,7 @@ Instructions:
         Args:
             query: User's question
             passages: List of retrieved passages
-            model_type: "gemini", "openai", or "extractive"
+            model_type: "gemini", "openai", "ollama", or "extractive"
             
         Returns:
             Generated answer
@@ -194,6 +219,11 @@ Instructions:
         
         elif model_type == "openai":
             answer = self.generate_answer_openai(query, context)
+            if answer:
+                return answer
+        
+        elif model_type == "ollama":
+            answer = self.generate_answer_ollama(query, context)
             if answer:
                 return answer
         
