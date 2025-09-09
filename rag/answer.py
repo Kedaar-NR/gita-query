@@ -8,6 +8,14 @@ import re
 from typing import List, Dict, Any, Optional
 from .utils import extract_citations_from_text, build_citation
 
+# Load environment variables from .env file
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # python-dotenv not installed, continue without it
+    pass
+
 
 class GitaAnswerer:
     """Handles answer generation for life skills questions using Bhagavad Gita verses."""
@@ -70,6 +78,7 @@ Instructions:
             print(f"Error type: {type(e).__name__}")
             import traceback
             traceback.print_exc()
+            return None
         
         return None
     
