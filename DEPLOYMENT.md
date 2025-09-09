@@ -10,6 +10,7 @@
 3. **Ensure these files are included**:
    - `app.py` (main application)
    - `requirements.txt` (dependencies)
+   - `runtime.txt` (Python version specification)
    - `rag/` folder (all RAG components)
    - `.streamlit/config.toml` (configuration)
    - `README.md` (documentation)
@@ -48,6 +49,7 @@ If you want to use Gemini or OpenAI APIs:
 ### Build Fails
 - Check that all files are in the repository
 - Ensure `requirements.txt` has all dependencies
+- **Python 3.13 compatibility issue**: If you see pandas compilation errors, the `runtime.txt` file specifies Python 3.11.9 which is compatible with all dependencies
 - Check the build logs for specific errors
 
 ### App Loads But Shows Errors
