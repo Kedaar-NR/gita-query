@@ -31,23 +31,6 @@ A fully working chatbot that answers life skills questions using the wisdom of t
 
 ## Deploy on Streamlit Cloud
 
-**Want to share your chatbot online?** Deploy it on Streamlit Cloud for free:
-
-1. **Push to GitHub**: Upload this project to a GitHub repository
-2. **Go to Streamlit Cloud**: Visit [share.streamlit.io](https://share.streamlit.io)
-3. **Deploy**: Click "New app" and connect your GitHub repository
-4. **Configure**: 
-   - **Main file path**: `app.py`
-   - **Branch**: `main` (or your default branch)
-5. **Optional API Keys**: Add secrets in the Streamlit Cloud dashboard:
-   - `GOOGLE_API_KEY`: For Gemini integration
-   - `OPENAI_API_KEY`: For OpenAI integration
-6. **Deploy**: Click "Deploy!" and wait for the build to complete
-
-Your chatbot will be live at `https://your-app-name.streamlit.app`!
-
-**Note**: The first deployment may take 5-10 minutes as it downloads the dataset and builds the search index. Subsequent loads will be much faster.
-
 ## Features
 
 - **Semantic Search**: Uses sentence transformers and FAISS for fast, accurate verse retrieval
@@ -216,7 +199,7 @@ eval/                  # Testing and quality assurance
 - **What it is**: How much disk space the cached files take
 - **What's cached**: Search index + processed verses for fast startup
 
-## How to Build Your Own Chatbot from Any Hugging Face Dataset
+## ⭐⭐⭐ How to Build Your Own Chatbot from Any Hugging Face Dataset (by Kedaar)
 
 **Want to create a chatbot for your own dataset?** This section shows you exactly how to adapt this code for any text dataset on Hugging Face.
 
