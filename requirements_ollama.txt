@@ -1,0 +1,22 @@
+# Core dependencies
+streamlit>=1.28.0
+datasets>=2.14.0
+sentence-transformers>=2.2.2
+numpy>=1.21.0,<2.0.0
+pandas>=1.5.0,<2.0.0
+torch>=1.11.0
+transformers>=4.30.0
+
+# Supabase
+supabase>=2.0.0
+postgrest>=0.13.0
+
+# Ollama (for local LLM)
+ollama>=0.1.0
+
+# Optional: Cloud LLMs (if you prefer over Ollama)
+# google-generativeai>=0.3.0
+# openai>=1.0.0
+
+# Vector operations
+faiss-cpu>=1.7.4

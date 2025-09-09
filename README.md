@@ -7,6 +7,18 @@ A fully working chatbot that answers life skills questions using the wisdom of t
 
 **Live Demo**: [Try the chatbot online](https://gita-query.streamlit.app) 
 
+## Deployment Options
+
+This chatbot can be deployed in multiple ways:
+
+- **Streamlit Cloud** (Current): Easy deployment, free hosting - see `DEPLOYMENT.md`
+- **Ollama + Supabase** (Recommended): Privacy-focused, no API costs - see `OLLAMA_SUPABASE_SETUP.md`
+- **Hybrid Cloud**: Supabase + OpenAI/Gemini for best performance
+- **Self-Hosted**: Complete control with Docker
+- **Serverless**: Modern deployment with Vercel/Netlify
+
+See `DEPLOYMENT_OPTIONS.md` for a complete comparison of all deployment methods.
+
 ## Quick Start
 
 **Just want to run it? Here's how:**
