@@ -110,7 +110,7 @@ def process_query(query: str, model_type: str, k: int) -> tuple[str, List[Dict[s
     all_passages = [best_verse] + context_verses
     
     # Generate answer using the best verse
-    answer = st.session_state.answerer.generate_answer(query, [best_verse], model_type)
+    answer = st.session_state.answerer.generate_answer(query, all_passages, model_type)
     
     # Return sources (limit to k for display)
     sources = all_passages[:k] if k else all_passages
