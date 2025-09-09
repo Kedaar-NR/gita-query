@@ -14,3 +14,4 @@ transformers>=4.30.0
 # Optional API integrations (app works without these)
 google-generativeai>=0.3.0
 openai>=1.3.0
+python-dotenv>=1.0.0

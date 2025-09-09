@@ -44,3 +44,4 @@ gita_docs.pkl
 
 # Logs
 *.log
+.env

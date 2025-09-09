@@ -8,6 +8,14 @@ import os
 from typing import List, Dict, Any
 from rag import initialize_indexer, GitaRetriever, GitaAnswerer, safety_check, build_citation
 
+# Load environment variables from .env file
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # python-dotenv not installed, continue without it
+    pass
+
 
 def initialize_session_state():
     """Initialize session state variables."""
