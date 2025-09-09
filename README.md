@@ -1,4 +1,4 @@
-# Bhagavad Gita Chatbot
+# Bhagavad Gita Chatbot (explanations written by me, Kedaar, if you want to make your own chatbot with a completely different dataset)
 
 A fully working chatbot that answers life skills questions using the wisdom of the Bhagavad Gita. The bot retrieves the most relevant verses and provides answers with clear citations.
 
