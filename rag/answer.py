@@ -57,8 +57,13 @@ Instructions:
             # Generate response
             response = model.generate_content(prompt)
             
-            if response and hasattr(response, 'text') and response.text:
-                return response.text.strip()
+            if response and response.candidates:
+                # Access text content safely
+                candidate = response.candidates[0]
+                if candidate.content and candidate.content.parts:
+                    text_content = candidate.content.parts[0].text
+                    if text_content:
+                        return text_content.strip()
             
         except Exception as e:
             print(f"Gemini API error: {e}")
