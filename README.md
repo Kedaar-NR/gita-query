@@ -4,7 +4,7 @@ A fully working chatbot that answers life skills questions using the wisdom of t
 
 **Dataset Source**: [JDhruv14/Bhagavad-Gita_Dataset](https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Dataset) on Hugging Face
 
-**Live Demo**: [Try the chatbot online](https://gita-chatbot.streamlit.app) (if deployed)
+**Live Demo**: [Try the chatbot online](https://gita-query.streamlit.app) 
 
 ## Quick Start
 
