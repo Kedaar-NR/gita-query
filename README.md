@@ -7,6 +7,9 @@ A fully working chatbot that answers life skills questions using the wisdom of t
 
 **Live Demo**: [Try the chatbot online](https://gita-query.streamlit.app) 
 
+<img width="1443" height="1341" alt="image" src="https://github.com/user-attachments/assets/5a101c4c-1e64-4684-9f0c-2b00aa02ffe9" />
+
+
 ## Deployment Options
 
 This chatbot can be deployed in multiple ways:
